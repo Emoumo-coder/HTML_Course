@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Umar Umar" />
+        <meta name="description" content="Best real estate website to see all available properties" />
+        <meta name="bootcamp" content="hint media" />
+        <title> Video || Real Estate</title>
+        <style>
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+            header nav {
+                flex: 1;
+            }
+            section {
+                height: 60vh;
+                max-width: 100%;
+                padding: 40px;
+            }
+            #hero {
+                background-color: antiquewhite;
+            }
+            #properties {
+                background-color: rgb(232, 198, 153);
+            }
+            #about {
+                background-color: rgb(151, 130, 101);
+            }
+            table, th, td {
+                border: 1px solid black;
+                padding: 20px;
+                border-collapse: collapse;
+            }
+            div {
+                padding: 12px 7px;
+            }
+            input, select {
+                padding: 4px;
+            }
+            select{
+                width: 200px;
+            }
+            button{
+                padding: 10px;
+                background-color: #000;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="/project"><img src="logo.png" alt="logo"></a>
+
+            <nav>
+                <ul style="display: flex; justify-content: space-between; list-style-type: none;">
+                    <li style="padding: 5px 13px;"><a href="/project/">Home</a></li>
+                    <li style="padding: 5px 13px;"><a href="/project/#about">About</a></li>
+                    <li style="padding: 5px 13px;"><a href="/project/#properties">Properties</a></li>
+                    <li style="padding: 5px 13px;"><a href="/project/video.html">Videos</a></li>
+                    <li style="padding: 5px 13px;"><a href="/project/contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Contact Us</h1>
+             <!-- contact section starts -->
+             <section id="contact">
+                <form action="https://httpbin.org/post" method="post">
+                    <!-- <fieldset> -->
+                        <!-- <legend>Contact Us</legend> -->
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label for="message">Message</label><br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="reset">Reset</button>
+                    <!-- </fieldset> -->
+                </form>
+
+                <hr>
+
+                <br>
+                <address>
+                    13 Agboola, Majeek bustop, Sangotedo Ajah, Lagos state <br> Nigeria.
+                </address>
+            </section>
+            <!-- contact section end -->
+        </main>
+        <footer>
+            <a href="#">Back to top</a>
+            <center align="center">
+                <p>Copyright &copy; Real Estate 2024</p>
+            </center>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Umar Umar" />
+        <meta name="description" content="Best real estate website to see all available properties" />
+        <meta name="bootcamp" content="hint media" />
+        <title>Real Estate</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <style>
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+            header nav {
+                flex: 1;
+            }
+            section {
+                height: 60vh;
+                max-width: 100%;
+                padding: 40px;
+            }
+            #hero {
+                background-color: antiquewhite;
+            }
+            #properties {
+                background-color: rgb(232, 198, 153);
+            }
+            #about {
+                background-color: rgb(151, 130, 101);
+            }
+            table, th, td {
+                border: 1px solid black;
+                padding: 20px;
+                border-collapse: collapse;
+            }
+            div {
+                padding: 12px 7px;
+            }
+            input, select {
+                padding: 4px;
+            }
+            select{
+                width: 200px;
+            }
+            button{
+                padding: 10px;
+                background-color: #000;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="/project"><img src="logo.png" alt="logo"></a>
+
+            <nav>
+                <ul style="display: flex; justify-content: space-between; list-style-type: none;">
+                    <li style="padding: 5px 13px;"><a href="/project/">Home</a></li>
+                    <li style="padding: 5px 13px;"><a href="/project/#about">About</a></li>
+                    <li style="padding: 5px 13px;"><a href="/project/#properties">Properties</a></li>
+                    <li style="padding: 5px 13px;"><a href="/project/video.html">Videos</a></li>
+                    <li style="padding: 5px 13px;"><a href="/project/contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Hero section starts -->
+            <section id="hero">
+                <figure>
+                    <img src="real-estate.jpg" width="500px" alt="hero" title="Hero">
+                    <figcaption><h1>Welcome to our Real Estate</h1></figcaption>
+                </figure>
+            </section>
+            <!-- Hero section ends -->
+
+            <!-- About section starts -->
+            <section id="about">
+                <h2>About</h2>
+                <p style="font-size: 25px;">
+                    At Real Estate, we understand that finding the perfect property is not just about square footage and price; it's about finding a place you can call home. With our expertise in the local market and dedication to customer satisfaction, we are here to help you every step of the way on your real estate journey.
+                </p>
+
+                <aside>
+                    <details>
+                        <summary>When was it established?</summary>
+                        <p>It established in year <time datetime="2000">2000</time></p>
+                    </details>
+                </aside>
+            </section>
+            <!-- About section end -->
+
+            <!-- Properties section starts -->
+            <section id="properties">
+                <h2>Properties</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Property</th>
+                        <th>Price</th>
+                        <th>Bedrooms</th>
+                        <th>Bathrooms</th>
+                        <th>Size (sqft)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Property 1</td>
+                        <td>$250,000</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1800</td>
+                      </tr>
+                      <tr>
+                        <td>Property 2</td>
+                        <td>$300,000</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2200</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+            </section>
+            <!-- Properties section end -->
+        </main>
+        <footer>
+            <a href="#">Back to top</a>
+            <center align="center">
+                <p>Copyright &copy; Real Estate 2024</p>
+            </center>
+        </footer>
+    </body>
+</html>

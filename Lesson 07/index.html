@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lesson 07</title>
+        <style>
+            div {
+                padding: 12px 7px;
+            }
+            input, select {
+                padding: 4px;
+            }
+            select{
+                width: 200px;
+            }
+            /* .example {
+                background-color: blue;
+                color: #fff;
+                padding: 60px;
+            } */
+        </style>
+    </head>
+
+    <body>
+        <h1>Lesson 07</h1>
+
+        <!-- Form section start -->
+        <h2>Form Continuation</h2>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="input-class" value="Umar Umar" name="name" required autocomplete="on" />
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="555-555-5555" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="1234">
+                </div>
+                <div>
+                    <label for="certificate">Certificate</label>
+                    <input type="file" id="certificate" class="input-class">
+                </div>
+    
+                <!-- Select Element -->
+                <div>
+                    <label for="Nationality">Nationality</label>
+                    <select name="Nationality" id="Nationality" multiple size="2">
+                        <optgroup label="Asian">
+                            <option value="America">America</option>
+                            <option value="Canada">Canada</option>
+                            <option selected value="Egypt">Egypt</option>
+                        </optgroup>
+                        <optgroup label="Africa">
+                            <option value="Ghana">Ghana</option>
+                            <option value="Nigeria">Nigeria</option>
+                        </optgroup>
+                        
+                    </select>
+                </div>
+                <!-- Select Element Ends -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Bank Details</legend>
+                <div>
+                    <p>Account Type</p>
+                    <label for="current">Current</label>
+                    <input type="radio" value="current" name="accountType" id="current" >
+
+                    <label for="savings">Savings</label>
+                    <input value="savings" type="radio" name="accountType" id="savings">
+
+                    <p>Your Depositing Days</p>
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" value="monday" name="depositingDays">
+
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" value="tuesday" name="depositingDays">
+
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" value="wednesday" name="depositingDays">
+
+                    <label for="thurday">Thurday</label>
+                    <input type="checkbox" value="thurday" name="depositingDays">
+
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" value="friday" name="depositingDays">
+                </div>
+            </fieldset>
+            
+            <!-- <input type="submit" value="Upload"> -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <!-- Form section end -->
+
+        <!-- <div class="example">
+            I want to see something...
+        </div> -->
+    </body>
+</html>
