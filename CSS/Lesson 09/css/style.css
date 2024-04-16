@@ -1,0 +1,51 @@
+/* Selectors Start */
+/* p {
+    color: blue;
+}
+
+p {
+    color: brown;
+}
+
+.pink {
+    color: pink;
+}
+.gray {
+    color: gray;
+}
+
+p {
+    color: green;
+}
+
+body {
+    font-family: 'Courier New';
+}
+
+#thrid-paragraph {
+    color: red;
+} */
+
+/* #second-paragraph {
+    color: slateblue;
+} */
+/* 
+#article-1 h2, #second-paragraph, #thrid-paragraph {
+    border: 2px solid #323232;
+} */
+
+/* Selectors End */
+
+/* Color Start */
+/* HEXADICIMAL COLOR */
+body {
+    color: #000000;
+}
+
+h1 {
+    /* Red Red Green Green Blue Blue */
+    color: #63AA22;
+}
+
+
+/* Color End */
