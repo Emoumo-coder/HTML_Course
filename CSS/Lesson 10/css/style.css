@@ -1,0 +1,111 @@
+/* Color Start */
+/* HEXADICIMAL COLOR */
+/* body {
+    color: #000000;
+} */
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* font-size: 16px; */
+}
+
+body {
+    height: 100vh;
+}
+
+h1 {
+    /* Red Red Green Green Blue Blue */
+    color: #DDDDDD;
+}
+
+/* RGB */
+.ex {
+    color: rgba(31, 71, 201, 0.819);
+}
+
+h2 {
+    background-color: hsla(0, 100%, 50%, 0);
+}
+
+/* Units */
+.unit-article {
+    width: 100%;
+    /* background-color: papayawhip; */
+}
+.article-2-container {
+    /* width: 80%; */
+    font-size: 20px;
+}
+
+.unit-article h2 {
+    border: 2px dashed red;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    /* width: 3em; */
+}
+
+.unit-article p {
+    font-size: 1rem;
+}
+
+/* CSS Box Model */
+
+.article-heading-container {
+    border: 2px solid blue;
+}
+
+.article-3-container h2 {
+    border: 4px double #ff0000;
+    /* border-bottom: 2px solid blue; */
+    /* border-width: 6px;
+    border-style: solid;
+    border-color: #ff0000; */
+
+    /* side */
+    /* border-right-style: solid;
+    border-bottom-width: 6px; */
+
+    /* -------- Margin ---------- */
+    margin: 20px;
+    /* side */
+    /* margin-top: 2px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    margin-left: 6px; */
+
+    /* -------- Margin ---------- */
+    padding: 8px;
+    /* side */
+    /* margin-top: 2px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    margin-left: 6px; */
+
+    /* -------- Margin ---------- */
+
+    /* -------- Outline ---------- */
+    outline: 2px solid purple;
+    outline-offset: -10px;
+    outline-width: 2px;
+    /* -------- Outline ---------- */
+    
+}
+
+/* Making box a circle */
+.container {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 50%;
+    /* margin-right: 50%; */
+}
+.circle {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
