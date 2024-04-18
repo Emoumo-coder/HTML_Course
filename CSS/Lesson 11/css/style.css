@@ -1,0 +1,133 @@
+/* Loading font family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+article {
+  /* width: 50%; */
+}
+
+.typo-article p {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-indent: 3rem;
+  text-shadow: 10px 3px hsl(0, 24%, 85%);
+  letter-spacing: 0.23em;
+  line-height: 2;
+  /* word-spacing: 30px; */
+  word-wrap: break-word;
+  white-space: wrap;
+  text-align: justify;
+}
+
+.typo-article div {
+  text-align: center;
+  font-size: 30px;
+  /* font-weight values from 100 -- 900 */
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma;
+  font-variant: small-caps;
+}
+
+/* ============  Links ============== */
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: hsl(203, 100%, 40%)
+}
+
+/* visited link */
+a:visited {
+    color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+    color: aquamarine;
+}
+
+/* selected link */
+a:focus {
+    color: hsl(130, 100%, 70%);
+}
+
+a:active {
+    color: black;
+}
+
+/* ============  Links end ============== */
+
+
+/* ============  List ============== */
+
+ol {
+    list-style-type:lower-alpha;
+    text-align: left;
+    list-style-position: inside;
+
+    /* styling list */
+    background-color: blueviolet;
+    padding: 20px;
+    list-style-type: none;
+}
+
+ol li {
+    background-color: black;
+    color: #fff;
+    padding: 10px 5px;
+    border-bottom: 1px solid #fff;
+}
+
+ol li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ol li:last-child {
+    border: none;
+}
+
+ul {
+    /* list-style-image: url('../checkmark.png'); */
+    list-style-type: none;
+}
+
+/* ============  List end ============== */
+
+
+/* ============  Table ============== */
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    height: 6rem;
+    /* padding: 2rem; */
+    text-align: end;
+    vertical-align: bottom;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(220, 216, 216);
+}
+
+tr:hover {
+    background-color: gray;
+}
+
+
+
+/* ============  Table end ============== */
