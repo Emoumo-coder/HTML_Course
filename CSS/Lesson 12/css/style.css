@@ -1,0 +1,149 @@
+.box {
+    width: 30vw;
+    height: 30vw;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 20px
+}
+
+.clear {
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+p {
+    /* margin-left: 20px */
+}
+.float-container {
+    background-color: bisque;
+    border: 3px dashed #333;
+    padding: 0.5rem;
+    /* overflow: auto; */
+}
+
+.clearfix {
+    display: flow-root;
+}
+
+
+/* ============== Columns section ============= */
+#column-article {
+    /* column-count: 4;
+    column-width: 200px; */
+    columns: 4 200px;
+    column-rule: 2px solid #333;
+    border: 2px dashed #c28cdd
+}
+
+#column-article h3 {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+#column-article p {
+    margin-top: 0;
+}
+
+#column-article .quote {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 100;
+    column-span: all;
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+/* ============== Columns section ends ============= */
+
+
+/* ============== Display section ============= */
+#display-section .first {
+    display: none;
+}
+
+#display-section .second {
+    visibility: hidden;
+}
+
+#display-section .third {
+    /* display: none; */
+    display: inline-block;
+    background-color: #c28cdd;
+    width: 200px;
+    height: 200px;
+}
+
+/* #display-article {
+    display: block;
+} */
+/* ============== Display section ends ============= */
+
+/* ============== Position section ============= */
+body {
+    height: 200vh;
+}
+.outer-container {
+    width: 75vw;
+    height: 87vh;
+    border: 2px dotted #c28cdd ;
+    margin: 40px auto;
+}
+
+.inner-container {
+    width: 65vw;
+    height: 70vh;
+    border: 2px solid #333;
+    margin: 2.3rem auto;
+}
+
+.position-box {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.green {
+    background-color: green;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    /* top: 30px;
+    right: 40px;
+    bottom: 100px; */
+}
+
+.absolute {
+    position: absolute;
+    top: 0px;
+}
+
+/* ============== Position section ends ============= */

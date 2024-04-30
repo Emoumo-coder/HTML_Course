@@ -2,3 +2,4 @@
 - Typography
 - Links
 - List
+- Table
