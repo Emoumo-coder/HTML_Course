@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    /* min-height: 100vh;
+    background-color: aliceblue;
+
+    background-image: url('../images/phone-with-hand.png'),  linear-gradient(to left, steelblue, #fff);
+    background-repeat: no-repeat;
+    background-position: center, bottom;
+    background-size: 40%, auto; */
+}
+
+.container {
+    width: 100%;
+    /* min-height: 100vh; */
+    background: hsl(216, 51%, 52%);
+
+    background-image: url('../images/wall.jpg');
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    /* border: 1px solid brown; */
+    border-bottom: 2px solid #000;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  background-color: hsla(0, 0%, 100%, 0.35);
+}
+
+.profile-pic-figure {
+    width: 30%;
+}
+
+.profile-pic-figure img {
+    width: 100%;
+    min-width: 100px;
+    height: 100%;
+    border: 5px solid darkgray;
+    border-radius: 50%;
+}
+
+.h1 {
+    font-size: 300%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.offscreen {
+    position: absolute;
+    top: -1000px;
+}
+
+.nowrap {
+    text-wrap: nowrap;
+}
+
+.clip {
+    font-size: 16rem;
+    font-weight: 800;
+    text-align: center;
+    background-image: url('../images/watter-rim.jpg');
+    background-position: bottom left;
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
