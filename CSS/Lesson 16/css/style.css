@@ -37,3 +37,60 @@ main {
 }
 
 /* Media Queries */
+/* ============= small */
+@media screen and (min-width: 576px) {
+    /* css rules */
+    body {
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+}
+
+/* ============= Meduim */
+@media screen and (min-width: 768px) {
+    /* css rules */
+    body {
+        background-color: red;
+        background-image: radial-gradient(whitesmoke, red);
+    }
+}
+
+/* ============= Large */
+@media screen and (min-width: 992px) {
+    /* css rules */
+    body {
+        background-color: blue;
+        background-image: radial-gradient(whitesmoke, blue);
+    }
+}
+
+/* ============= Extra */
+@media screen and (min-width: 1200px) {
+    /* css rules */
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+}
+
+/* ============= Double Extra */
+@media screen and (min-width: 1400px) {
+    /* css rules */
+    body {
+        background-color: violet;
+        background-image: radial-gradient(whitesmoke, violet);
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 700px) {
+    body {
+        background-color: aqua;
+        background-image: radial-gradient(whitesmoke, aqua);
+    }
+}
+
+@media screen and (min-aspect-ratio: 16/9)  {
+    body {
+        background-image: radial-gradient(whitesmoke, indigo);
+    }
+}
