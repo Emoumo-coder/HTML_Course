@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #1E293B;
+    color: whitesmoke;
+    padding: 0.4rem;
+
+    position: sticky;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+nav {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+main {
+    flex-grow: 1;
+    padding: 1.6rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.card {
+    scroll-margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+/* Media Queries */
+/* ============= small */
+@media screen and (min-width: 576px) {
+    /* css rules */
+    body {
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+}
+
+/* ============= Meduim */
+@media screen and (min-width: 768px) {
+    /* css rules */
+    body {
+        background-color: red;
+        background-image: radial-gradient(whitesmoke, red);
+    }
+}
+
+/* ============= Large */
+@media screen and (min-width: 992px) {
+    /* css rules */
+    body {
+        background-color: blue;
+        background-image: radial-gradient(whitesmoke, blue);
+    }
+}
+
+/* ============= Extra */
+@media screen and (min-width: 1200px) {
+    /* css rules */
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    }
+}
+
+/* ============= Double Extra */
+@media screen and (min-width: 1400px) {
+    /* css rules */
+    body {
+        background-color: violet;
+        background-image: radial-gradient(whitesmoke, violet);
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 700px) {
+    body {
+        background-color: aqua;
+        background-image: radial-gradient(whitesmoke, aqua);
+    }
+}
+
+@media screen and (min-aspect-ratio: 16/9)  {
+    body {
+        background-image: radial-gradient(whitesmoke, indigo);
+    }
+}
