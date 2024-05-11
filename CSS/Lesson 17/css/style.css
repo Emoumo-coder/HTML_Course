@@ -1,7 +1,8 @@
+/*================= Reset =============*/
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 img {
@@ -9,6 +10,10 @@ img {
     width: 100%;
     height: auto;
 }
+
+/*================= Reset =============*/
+
+/*================= General =============*/
 
 body {
     min-height: 100vh;
@@ -22,14 +27,13 @@ header, nav, main, footer {
     display: grid;
     place-content: center;
     grid-template-columns: 100%;
-    text-align: center;
 }
 
 header, footer {
     background-color: #1E293B;
     color: whitesmoke;
     padding: 0.4rem;
-
+    text-align: center;
     position: sticky;
 }
 
@@ -60,62 +64,129 @@ main {
     padding: 1.6rem;
     display: flex;
     flex-flow: column nowrap;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .card {
     scroll-margin-top: 1rem;
     padding: 1rem;
     border: 1px solid #333;
+    width: min(100%, 400px);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #d0d5db79;
+}
+
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card figcaption {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card img {
+    border: 2px solid #333;
+    border-radius: 50%;
 }
 
 /* Media Queries */
 /* ============= small */
 @media screen and (min-width: 576px) {
-    /* css rules */
-    body {
-        background-color: green;
-        background-image: radial-gradient(whitesmoke, green);
+    nav {
+        display: none;
+    }
+
+    main {
+        flex-flow: row wrap;
+    }
+
+    .card {
+        width: min(calc(30% - 1rem), 250px);
+    }
+
+    .card figure {
+        flex-grow: 1;
+    }
+
+    .card img {
+        flex-grow: 1;
     }
 }
 
 /* ============= Meduim */
 @media screen and (min-width: 768px) {
-    /* css rules */
-    body {
-        background-color: red;
-        background-image: radial-gradient(whitesmoke, red);
+    main {
+        align-items: stretch;
+    }
+
+    .card {
+        width: min(calc(33% - 1rem), 300px);
+    }
+    .card:nth-child(2) {
+        order: -1;
     }
 }
 
 /* ============= Large */
 @media screen and (min-width: 992px) {
-    /* css rules */
-    body {
-        background-color: blue;
-        background-image: radial-gradient(whitesmoke, blue);
+    .card figure {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        gap: 1rem;
+        width: min(calc(33% - 1rem), 250px);
     }
 }
 
 /* ============= Extra */
 @media screen and (min-width: 1200px) {
-    /* css rules */
-    body {
-        background-color: rebeccapurple;
-        background-image: radial-gradient(whitesmoke, rebeccapurple);
+    .card {
+        width: min(calc(33% - 1rem), 300px);
     }
 }
 
 /* ============= Double Extra */
 @media screen and (min-width: 1400px) {
     /* css rules */
-    body {
-        background-color: violet;
-        background-image: radial-gradient(whitesmoke, violet);
+    .card {
+        position: relative;
+        overflow: hidden;
+    }
+    .card-circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .card-circle:first-child{
+        background-color: rebeccapurple;
+        right: -30px;
+        top: 0;
+        z-index: 1;
+    }
+    .card-circle:nth-child(2){
+        background-color: #fff;
+        width: 100px;
+        height: 100px;
+        right: 20px;
+        top: 20px;
+    }
+    .card-circle:nth-child(3){
+        background-color: steelblue;
+        top: 40px;
+        right: -30px;
     }
 }
 
-@media screen and (orientation: landscape) and (min-width: 700px) {
+/* @media screen and (orientation: landscape) and (min-width: 700px) {
     body {
         background-color: aqua;
         background-image: radial-gradient(whitesmoke, aqua);
@@ -126,4 +197,4 @@ main {
     body {
         background-image: radial-gradient(whitesmoke, indigo);
     }
-}
+} */
