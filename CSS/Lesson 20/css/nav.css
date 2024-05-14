@@ -1,0 +1,116 @@
+:root {
+    --BG-COLOR: #892323;
+    --FONT-COLOR: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: var(--BG-COLOR);
+    color: var(--FONT-COLOR);
+}
+
+.header-line {
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-btn {
+    background-color: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-icon, .hamburger-icon::before, .hamburger-icon::after
+ {
+    background-color: var(--FONT-COLOR);
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.hamburger-icon::before, .hamburger-icon::after {
+    content: "";
+}
+
+.hamburger-icon::before {
+    transform: translate(-20px, -12px);
+}
+
+.hamburger-icon::after {
+    transform: translate(-20px, 12px);
+}
+
+header:hover .hamburger-icon {
+    background-color: transparent;
+    transform: rotate(720deg);
+}
+
+header:hover .hamburger-icon::before {
+    transform: translateX(-20px) rotate(45deg);
+}
+
+header:hover .hamburger-icon::after {
+    transform: translateX(-20px) rotate(-45deg);
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav li {
+    padding: 0.5rem;
+    border-top: 1px solid var(--FONT-COLOR);
+}
+
+nav li a {
+    display: block;
+    width: 80%;
+    text-align: center;
+    color: var(--FONT-COLOR);
+    text-decoration: none;
+    margin-inline: auto;
+    transition: all 0.5s;
+}
+
+header:focus nav, header:hover nav {
+    display: block;
+}
+
+a:hover, a:focus {
+    transform: scaleX(1.2);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --BG-COLOR: #333;
+        --FONT-COLOR: whitesmoke;
+    }
+}
