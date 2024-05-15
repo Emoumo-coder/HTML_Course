@@ -2,4 +2,4 @@
 - Introduction to JS
 - Variables
 - DataTypes
-- Operations
+- Operators
