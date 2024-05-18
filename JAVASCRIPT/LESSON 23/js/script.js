@@ -157,7 +157,9 @@ console.log("This is random number from 50 to 100: " + randomFrom50To100);
 /*============== Excersise ===============*/
 console.log("\n\n\n Excersise>>>");
 
-let name = "Umar";
-let characterAtName = name.charAt(2);
+let name = "Savioura";
+let nameLen = name.length;
+let randomNum = Math.floor(Math.random() * nameLen);
+let characterAtName = name.charAt(randomNum);
 
 console.log(characterAtName);
