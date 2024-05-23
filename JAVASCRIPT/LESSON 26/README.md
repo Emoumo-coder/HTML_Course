@@ -14,6 +14,7 @@
 
 ### Array Iteration
 - forEach() method
+- template literal
 - map method
 - filter method
 - reduce method
@@ -35,3 +36,7 @@
 - Constructor and Destructor
 - Getters and Setters
 - Visibility
+
+### Excersise
+
+- Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).

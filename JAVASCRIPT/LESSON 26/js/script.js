@@ -74,6 +74,58 @@ for (let motorcyleIndex = 0; motorcyleIndex < motorcyles.length; motorcyleIndex+
 
 console.log("\n\nUsing the ForEach Method");
 
-// array.forEach(function () {
+console.log(motors3);
 
-// });
+motors3.forEach(function (value, index, array) {
+    // concatenation
+    // console.log("This is the element at index " + index + ": " + value + "\n");
+    
+    // Template literal
+    console.log(`This is the element at index ${index} : ${value}\n`);
+});
+
+// Map method
+console.log("\n MAp method");
+
+console.log(motors3);
+
+motors3.map(function (value, index, array) {
+    // returning element at odd index position
+    if (isOdd(index)) {
+        console.log(value);
+    }
+});
+
+// Modulos: is the reminder of a division.
+
+function isOdd(num) {
+    if (num % 2 !== 0) {
+        return true;
+    }
+
+    return false;
+}
+
+// Filter Method
+console.log("\n\nFilter Method");
+let numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let numArrayOdd = numArray.filter(function (value, index, array) {
+    return isOdd(value);
+})
+
+console.log(numArrayOdd);
+
+// reduce Method
+console.log("\n\nreduce Method");
+
+let reduceNumArray = numArray.reduce(function (total, value, index, array) {
+    return total + value;
+});
+
+console.log(reduceNumArray);
+
+/*============== Array Excersise ===============*/
+console.log("\n\n\nArray Excersise");
+
+// Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
