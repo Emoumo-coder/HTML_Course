@@ -129,3 +129,19 @@ console.log(reduceNumArray);
 console.log("\n\n\nArray Excersise");
 
 // Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+
+const myArray = ["Amanda", "Ben", "Saviour", "Ben", "Ben", "Amanda"];
+
+function removeDuplicateItem(collection) {
+    let newArr = [];
+
+    collection.map(function (value, index, array) {
+        if (!newArr.includes(value)) {
+            return newArr.push(value);
+        }
+    });
+
+    return newArr;
+}
+
+console.log(removeDuplicateItem(myArray));
