@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #190b6d;
+}
+
+article {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+p {
+    color: aliceblue;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.round {
+    width: 80%;
+    height: 30vh;
+    background-color: rgb(124, 10, 10);
+    border-radius: 200px 20px 0px 0px;
+}

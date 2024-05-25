@@ -19,7 +19,7 @@
 - filter method
 - reduce method
 
-### Object
+### Object *
 
 - Object Syntax
 - Object method
@@ -30,7 +30,7 @@
 - hasOwnProperty method
 - Destructuring Object
 
-### Classes
+### Classes *
 
 - Class Syntax
 - Constructor and Destructor
