@@ -5,7 +5,7 @@
 ### Classes
 
 - Class Syntax
-- Constructor and Destructor
+- Constructor
 - Getters and Setters
 - Visibility
 
