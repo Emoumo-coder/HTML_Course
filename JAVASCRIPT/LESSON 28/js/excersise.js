@@ -66,22 +66,33 @@ people.forEach(function (person, index, array) {
     console.log(person.about());
 })
 
-// Checking relation base on their addresses
-people.map((person, index) => {
+// Checking relation based on their addresses
+people.forEach(function (person, index) {
     const address = person.address;
 
-    const relation = people.map((person2, index2) => {
+    const relations = people.map((person2, index2) => {
+        if (index !== index2) {
             const address2 = person2.address;
+            return address.city === address2.city && address.street === address2.street && address.zipCode === address2.zipCode;
+        }
+        return false;
+    });
 
-            if (index !== index2) {
-                if (address.city === address2.city && address.street == address2.street && address.zipCode === address2.zipCode) {
-                    return true
-                }
-                
-                return false;
-            }
-            return false
-        });
+    const isSibling = relations.includes(true);
+    console.log(isSibling ? "Siblings" : "no-related");
+});
 
-        relation ? console.log("Siblings") : console.log("no-related");
+// Checking relation based on their addresses -- using the some
+people.forEach(function (person, index) {
+    const address = person.address;
+
+    const isSibling = people.some((person2, index2) => {
+        if (index !== index2) {
+            const address2 = person2.address;
+            return address.city === address2.city && address.street === address2.street && address.zipCode === address2.zipCode;
+        }
+        return false;
+    });
+
+    console.log(isSibling ? "Siblings" : "no-related");
 });

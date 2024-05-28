@@ -45,10 +45,10 @@ console.log("\nClasses");
 class Car {
     door;
     wheels;
-    color;
+    #color;
 
     constructor (color) {
-        this.color = color;
+        this.#color = color;
         this.door = 4;
         this.wheels = 4;
     }
@@ -81,3 +81,14 @@ console.log(ferrari.engine());
 // Getters and setters 
 mercedez.setDoor(8);
 console.log(mercedez.getDoor());
+
+// console.log(mercedez.#color);
+
+class Car2 extends Car {
+    constructor (color) {
+        super(color)
+    }
+}
+
+const lemosin = new Car2("dark blue");
+console.log(lemosin);
