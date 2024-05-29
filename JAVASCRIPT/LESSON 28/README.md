@@ -9,13 +9,13 @@
 - Getters and Setters
 - Visibility
 
-### JSON
+### JSON * (But read on it)
 
 - JSON Syntax
 - `stringify` Method
 - `parse` Method
 
-### Error Handling
+### Error Handling *
 
 - `"use strict"`
 - `ReferenceError`
@@ -34,7 +34,7 @@
 - Error Object
 - `finally` Block
 
-### DOM - Document Object Model
+### DOM - Document Object Model *
 
 - `document.getElementById` Method
 - `document.querySelector` Method
