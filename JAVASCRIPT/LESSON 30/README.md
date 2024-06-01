@@ -22,7 +22,7 @@
   - `setItem`, `getItem`, `removeItem`, `clear`, `key` Methods
   - `length` Property
 
-### Modules
+### Modules *
 
 - Exporting Methods from Different JavaScript Files
 - Different Exporting Methods
@@ -31,7 +31,7 @@
 - Import All Methods from a Module
 - Default Method on Importing All Methods from a Module
 
-### Higher Order Function
+### Higher Order Function *
 
 - Definition
 - Examples
