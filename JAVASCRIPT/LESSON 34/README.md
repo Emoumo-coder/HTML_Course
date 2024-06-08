@@ -1,11 +1,6 @@
-# Lesson 33 Objective
+# Lesson 34 Objective
 
 ## Topics
-
-### Synchronous / Asyncronous, Callbacks *
-
-- Practical example of both
-
 
 ### Async/Await, Promises
 - Introduction
@@ -21,19 +16,6 @@
 Here is an example illustrating these concepts:
 
 ```javascript
-// Example Illustrating Synchronous and Asynchronous Code:
-// Synchronous Example
-console.log('Synchronous 1');
-console.log('Synchronous 2');
-console.log('Synchronous 3');
-
-// Asynchronous Example with Callbacks
-console.log('Asynchronous start');
-setTimeout(() => {
-    console.log('Asynchronous callback');
-}, 1000);
-console.log('Asynchronous end');
-
 // Example Illustrating Promises and Async/Await:
 // Using Promises
 function fetchDataWithPromise() {
