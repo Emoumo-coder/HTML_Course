@@ -3,9 +3,11 @@
 ## Topics
 
 ### Async/Await, Promises
-- Promises
-    - example
-    - methods
+- Introduction
+    - **Promises**
+        - States
+        - Syntax
+        - Thenables
 - `fetch` API
 - Async/Await
 - Practical Example
