@@ -42,5 +42,15 @@ function dumpTotable (users) {
 
     const tableBody = document.querySelector('tbody');
 
-    tableBody.innerHTML = users;
+    let serial = 0;
+    const userRows = users.map(({email, website}) => {
+        serial++;
+        return `<tr>
+            <td>${serial}</td>
+            <td>${email}</td>
+            <td>${website}</td>
+        </tr>`
+    }).join("");
+
+    tableBody.innerHTML = userRows;
 }
