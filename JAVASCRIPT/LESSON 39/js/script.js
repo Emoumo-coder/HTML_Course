@@ -31,3 +31,5 @@ const numbers = testString.match(numberRegex);
 console.log(numbers);
 
 // anaconda(1980)
+const text2 = 'anaconda(1980)';
+console.log(/(?<movie_name>^\w+)\((?<movie_year>\w+)\)/g.exec(text2));
