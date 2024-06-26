@@ -125,4 +125,5 @@ button {
     text-transform: uppercase;
     font-family: monospace;
     font-style: italic;
+    cursor: pointer;
 }
