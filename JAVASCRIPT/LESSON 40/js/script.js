@@ -56,7 +56,7 @@ function execute (regex, str) {
 // anaconda - sg(1980).mkv - Anaconda(02-10-1980).mp4
 const movie = 'Anaconda2 - sg(02-10-1980).mkv';
 
-const movieRegex = /(?<movie_name>^[a-zA-z-0-9 ]+)\((?<movie_year>[\-0-9]+)\)\.(?<movie_extension>[a-z0-9]+)/g
+const movieRegex = /(?<movie_name>^[a-zA-z-0-9 ]+)\((?<movie_year>[\-0-9]+)\)\.(?<movie_extension>[a-z0-9]+)/;
 
 const matchedMovie = movieRegex.exec(movie);
 
@@ -94,7 +94,7 @@ movieForm.addEventListener('submit', (event) => {
   const input = validateMovieInput.value;
 
   const matchedMovie = movieRegex.exec(input);
- 
+  console.log(matchedMovie);
   if (matchedMovie) {
 
     const movieGroup = matchedMovie['groups'];
